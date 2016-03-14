@@ -1,0 +1,26 @@
+
+  
+  <%= form_for(:toyshop,:url=>{:action=>'update',:id=>@toyshop}) do |t|%>
+
+  <p>
+  <b>shopname:</b>
+  <%=t.text_field:name %>
+  </p>
+
+  <p>
+ <b>shopaddress:</b>
+  <%=t.text_area:address %>
+  </p>
+
+  <p>
+  <b>shopowner:</b>
+  <%=t.text_field:owner %>
+  </p>
+  
+ 
+  
+  <p>
+  <%=t.submit "update"%>
+  </p>
+
+  <% end %>

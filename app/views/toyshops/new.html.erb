@@ -1,0 +1,31 @@
+
+  
+  
+  <%= form_for(:toyshop,:url=>{:action=>'create'}) do |t|%>
+  <table border=1>
+  
+  <tr>
+  <td><b>shopname:</b></td>
+  <td><%=t.text_field:name %></td>
+  </tr>
+
+  <tr>
+ <td><b>shopaddress:</b></td>
+  <td><%=t.text_area:address %></td>
+  </tr>
+
+  <tr>
+  <td><b>shopowner:</b></td>
+  <td><%=t.text_field:owner %></td>
+  </tr>
+
+  <tr>
+  <td colspan=2 style="background-color:green"><%=t.submit "create"%></td>
+  </tr>
+
+  </table>
+  <% end %>
+ 
+
+   
+  

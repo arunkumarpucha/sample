@@ -1,0 +1,18 @@
+
+   <table border=1>
+	<th style="color:red">shopname</th>
+	<th style="color:red">shopaddress</th>
+	<th style="color:red">shopowner</th>
+	<%@toyshop.each do |ty| %>
+	
+		
+		<tr>
+			<td style="color:green"><%= ty.name %></td>
+			<td style="color:green"><%= ty.address %></td>
+			<td style="color:green"><%= ty.owner %></td>
+			<td style="color:green"><%= link_to "show",toyshops_show_path(toyobj:ty) %></td>
+			<td style="color:green"><%= link_to "edit",toyshops_edit_path(toyobj:ty) %></td>
+		</tr>
+    <%end %>
+	</table>
+	
