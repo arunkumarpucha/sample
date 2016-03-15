@@ -24,6 +24,7 @@ class ToyshopsController < ApplicationController
  
 
   def user_params
+    //editing the file for testing purpose
     params.require(:toyshop).permit(:name, :address, :owner)
   end
 
